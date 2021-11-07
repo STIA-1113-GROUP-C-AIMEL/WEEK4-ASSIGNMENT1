@@ -1,0 +1,77 @@
+package personalAssignment;
+
+import java.util.Scanner;
+
+public class OneA {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int a, b, c, d;
+		double a1, b2 , c3;
+		
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Input the number of a, b and c for total");
+		System.out.print("Enter the number of items: ");
+		a = scan.nextInt();
+		System.out.println("Enter price of first item: ");
+		a1 = scan.nextDouble();
+		System.out.println("Enter quantity of first item: ");
+		b = scan.nextInt();
+		
+		
+		
+		System.out.println("Enter price of second item: ");
+		b2 = scan.nextDouble();
+		System.out.println("Enter quantity of third item: ");
+		c = scan.nextInt();
+		
+		System.out.println("Enter price of third item: ");
+		c3 = scan.nextDouble();
+		System.out.println("Enter quantity of third item: ");
+		d = scan.nextInt();
+	
+	
+		 double totalprice1 = b * a1;
+	     double totalprice2 = c * b2;
+	     double totalprice3 = d * c3;
+	     double totalprice = totalprice1 + totalprice2 + totalprice3;
+	     
+	     double discount;
+	        if (totalprice > 100 ) {
+	            discount = 0.2 * totalprice;
+	        } else {
+	            discount = 0.1 * totalprice;
+	        }
+	        
+	        double paidprice;
+	        paidprice = totalprice - discount;
+	        
+	        System.out.print("Total price         : RM" + totalprice);
+	        System.out.println("\nDiscount received   : RM" + discount);
+	        System.out.println("Price to paid   : RM" + paidprice);
+		
+		
+				
+		
+		
+	}
+}
+output
+Input the number of a, b and c for total
+Enter the number of items: 3
+Enter price of first item: 
+15
+Enter quantity of first item: 
+3
+Enter price of second item: 
+20
+Enter quantity of third item: 
+12
+Enter price of third item: 
+60
+Enter quantity of third item: 
+2
+Total price         : RM405.0
+Discount received   : RM81.0
+Price to be paid    : RM324.0
